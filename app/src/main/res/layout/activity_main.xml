@@ -10,7 +10,7 @@
         android:id="@+id/my_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="get Todays Dollar Rate"
+        android:text="Get All Menu Name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"/>
 
@@ -25,15 +25,16 @@
         android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/dollar_rate"
+        android:id="@+id/values"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="20 Taka BDT"
+        android:text="Names"
         android:textSize="20sp"
         android:textColor="#000000"
         android:layout_below="@+id/progressbar"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
 
 </RelativeLayout>
