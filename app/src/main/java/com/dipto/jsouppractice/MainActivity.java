@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
 
+                    // apply to currency converter link
                     Log.d("++Connection++", "yup iam here") ;
                     Document doc = Jsoup.connect("http://www.ssaurel.com/blog").get();
                     Elements elements = doc.select("span.menu-decsription") ;
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                     for(Element e : elements){
                         Log.d("span values :", String.valueOf(e.text())) ;
                         builder.append("Menu Name : ").append(e.text()).append("\n");
-
                     }
                 }
                 catch (IOException e) {
